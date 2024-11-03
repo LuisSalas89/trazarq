@@ -123,11 +123,13 @@ body {
 /* Responsive: columna en pantallas pequeñas */
 @media (max-width: 768px) {
   .containers2 {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
     padding: 10px; /* Espaciado lateral en pantallas pequeñas */
   }
+
+
 
   .images2, .text2 {
     width: 100%; /* Imagen y texto ocupan el 100% en modo columna */
