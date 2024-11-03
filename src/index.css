@@ -1,13 +1,141 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  
 }
+
+.your-slider {
+  width: 80%; /* Asegura que el slider ocupe el 100% del ancho */
+  background-color: black;
+  
+  padding: 20px; /* Agrega padding si deseas espacio interno */
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+.your-slider img {
+  width: 90%;
+  max-width: 100%; /* Asegura que la imagen no desborde su contenedor */
+  max-height: 200px;
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+  margin: auto;
+}
+
+
+.your-slider h3 {
+  font-size: 24px; /* Tamaño de fuente para el título */
+  font-weight: bold; /* Hace que el texto sea negrita */
+  color: white; /* Color del texto del título */
+  margin: 10px 0; /* Espacio arriba y abajo del título */
+  margin-left: 45px;
+}
+
+.your-slider p {
+  font-size: 16px; /* Tamaño de fuente para el párrafo */
+  color: #666; /* Color del texto del párrafo */
+  line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+  margin: 0; /* Elimina margen por defecto */
+  padding: 0 ; /* Espacio lateral en el párrafo */
+  margin-left: 45px;
+  
+}
+
+.containers {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 20px; /* Espacio entre imagen y texto */
+}
+
+.images {
+  width: 60%;
+  padding: 20px;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para un aspecto más agradable */
+}
+
+.text {
+  width: 40%; /* Ajuste del ancho para que el texto tenga más espacio */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar el texto verticalmente */
+}
+
+/* Responsive: columna en pantallas pequeñas */
+@media (max-width: 768px) {
+  .containers {
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    padding: 10px; /* Espaciado lateral en pantallas pequeñas */
+  }
+
+  .images, .text {
+    width: 100%; /* Imagen y texto ocupan el 100% en modo columna */
+    padding: 10px; /* Menor padding en pantallas pequeñas */
+  }
+
+  .images img {
+    border-radius: 5px; /* Ajuste de borde redondeado para pantallas pequeñas */
+  }
+}
+
+
+.containers2 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 20px; /* Espacio entre imagen y texto */
+}
+
+.images2 {
+  width: 60%;
+  padding: 20px;
+}
+
+.images2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para un aspecto más agradable */
+}
+
+.text2 {
+  width: 40%; /* Ajuste del ancho para que el texto tenga más espacio */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar el texto verticalmente */
+}
+
+/* Responsive: columna en pantallas pequeñas */
+@media (max-width: 768px) {
+  .containers2 {
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    padding: 10px; /* Espaciado lateral en pantallas pequeñas */
+  }
+
+  .images2, .text2 {
+    width: 100%; /* Imagen y texto ocupan el 100% en modo columna */
+    padding: 10px; /* Menor padding en pantallas pequeñas */
+  }
+
+  .images2 img {
+    border-radius: 5px; /* Ajuste de borde redondeado para pantallas pequeñas */
+  }
+}
+

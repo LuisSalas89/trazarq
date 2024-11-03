@@ -17,18 +17,36 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+      It will be replaced with the URL of the public folder during the build.
+      Only files inside the public folder can be referenced from the HTML.
 
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+      Learn how to configure a non-root public URL by running npm run build.
     -->
     <title>React App</title>
+ 
+  
+    <link rel="stylesheet" href="../src//index.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+  />
+
   </head>
+
   <body>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,8 +54,80 @@
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+      To begin the development, run npm start or yarn start.
+      To create a production bundle, use npm run build or yarn build.
     -->
+    
+    <div class="your-slider">
+      <div>
+        <img src="./Screenshot_20241103_152851.png" alt="Imagen 1" />  
+        <h3>Servicios de Diseño</h3>
+        <p>Convierte tus sueños en realidad.</p>
+      </div>
+      <div>
+        <img src="./0547066882.jpg" alt="Imagen 1" />  
+        <h3>Trámite de licencias
+        </h3>
+        <p>A través de este servicio le ofrecemos la seguridad de una construcción bien planeada.
+
+
+        </p>
+      </div>
+      <div>
+        <img src="./Reenderizado1.png" alt="Imagen 1" />  
+        <h3>Diseño Arquitectonico</h3>
+        <p>Planos de Anteproyecto | Renderizado y Modelado 3D
+        </p>
+      </div>
+      
+      
+  </div>
+
+  <!-- Scripts colocados al final para optimización -->
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Inicialización de Slick -->
+  <script>
+      $(document).ready(function(){
+          $('.your-slider').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+              dots: true
+          });
+      });
+  </script>
+
+<div class="containers">
+  <div class="images">
+    <img src="./ideas-remodelación-hogar.jpg" alt="Image">
+  </div>
+  <div class="text">
+    <h3>Remodelación</h3>
+    <p>¿Deseas ampliar tu casa? ¿O tal vez, por fin, te has lanzado a la piscina y has decidido construir la casa de tus sueños? Que se trate de un proyecto pequeño o de una construcción grande, vas a querer a un buen arquitecto en el que puedas confiar. Nos especializamos en la planificación sensata y asequible que te permite sentirte cómodo y seguro con tus obras. Podemos hablar sobre todos tus requisitos y elaborar un plan que convertirá en realidad todos tus sueños.</p>
+  </div>
+</div>
+
+
+<div class="containers2">
+  
+  <div class="text2">
+    <h3>Trámite de licencias</h3>
+    <p>A través de este servicio le ofrecemos la seguridad de una construcción bien planeada.
+
+      Ponemos manos a la obra para cumplir con los requisitos establecidos por la norma del estado asegurando la integridad de todo el proceso constructivo así como del cumplimiento de las normas de edificación.
+      
+      </p>
+  </div>
+  <div class="images2">
+    <img src="./jilyo-768x511.jpg" alt="Image">
+  </div>
+</div>
+
+
+
   </body>
 </html>

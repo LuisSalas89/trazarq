@@ -1,0 +1,90 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    nav-left: 50px;
+    
+    margin-bottom: 25px;
+  }
+  
+  .navbar .logo {
+    max-width: 15rem;
+  }
+  
+  .nav-links {
+    
+    margin-right: 8px;
+
+    list-style: none;
+    display: flex;
+    z-index: 10; /* Asegura que el header esté por delante */
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  /* Menú responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Ocultar por defecto */
+      position: absolute;
+      top: 60px; /* Ajusta esto según la altura de tu navbar */
+      right: 0px;
+      background-color: #333;
+      flex-direction: column;
+      width: 150px;
+      border-radius: 5px;
+      align-items: end;
+      transition: all 0.3s ease; /* Transición suave */
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .nav-links a {
+      padding: 10px;
+      display: block;
+      text-align: center;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Mostrar el menú al hacer clic */
+    .nav-links.open {
+      display: flex; /* Mostrar el menú cuando isOpen es true */
+    }
+  }
+  
