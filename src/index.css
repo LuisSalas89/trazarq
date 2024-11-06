@@ -46,6 +46,12 @@ body {
   
 }
 
+.your-slider a {
+  text-decoration: none; /* Elimina la línea de abajo */
+  color: inherit; /* Hereda el color del texto para no cambiarlo */
+}
+
+
 .containers {
   display: flex;
   width: 80%;
@@ -139,5 +145,16 @@ body {
   .images2 img {
     border-radius: 5px; /* Ajuste de borde redondeado para pantallas pequeñas */
   }
+}
+
+.pdfContainer {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
