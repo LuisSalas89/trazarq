@@ -7,9 +7,12 @@ function Dictamen() {
   return (
     <div className="pdfContainer">
       {isMobile ? (
-        <a href={`${process.env.PUBLIC_URL}/Dictamen.pdf`} download="Dictamen.pdf">
-          Descargar Dictamen
-        </a>
+        <button
+          onClick={() => window.open(`${process.env.PUBLIC_URL}/Dictamen.pdf`, '_blank')}
+          className="pdfButton"
+        >
+          Abrir Dictamen
+        </button>
       ) : (
         <iframe
           src={`${process.env.PUBLIC_URL}/Dictamen.pdf`}
@@ -24,3 +27,4 @@ function Dictamen() {
 }
 
 export default Dictamen;
+
