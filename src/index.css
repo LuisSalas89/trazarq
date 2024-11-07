@@ -11,11 +11,11 @@ body {
 
 .your-slider {
   width: 80%; /* Asegura que el slider ocupe el 100% del ancho */
-  background-color: black;
+  background-color: white;
   
   padding: 20px; /* Agrega padding si deseas espacio interno */
   margin: auto;
-  margin-top: 50px;
+  
 }
 
 
@@ -49,6 +49,7 @@ body {
 .your-slider a {
   text-decoration: none; /* Elimina la línea de abajo */
   color: inherit; /* Hereda el color del texto para no cambiarlo */
+  
 }
 
 

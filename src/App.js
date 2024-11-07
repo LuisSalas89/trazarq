@@ -5,7 +5,8 @@ import Carrusel from './components/Carrusel';
 import Diseño from './components/Diseño2';
 import Diseño2 from './components/Diseño2';
 import Dictamen from './components/Dictamen';
-
+import Contacto from './components/Contacto';
+import './index.css';
 import {Routes, Route} from "react-router-dom";
 
 import SliderComponent from '../src/components/SliderComponent'
@@ -24,8 +25,10 @@ function App() {
         path="/"
         element={
           <>
+            <Contacto/>
             <SliderComponent />
             <Diseño />
+            
           </>
         }
       />
@@ -33,8 +36,10 @@ function App() {
         path="/index"
         element={
           <>
+            <Contacto/>
             <SliderComponent />
             <Diseño />
+            
           </>
         }
       />

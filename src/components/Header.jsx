@@ -27,7 +27,7 @@ function Header() {
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="/index2" target="_blank" rel="noopener noreferrer">Servicios</a></li>
             <li><a href="#acerca">Acerca de</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            
           </ul>
         </nav>
       </>

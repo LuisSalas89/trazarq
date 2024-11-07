@@ -1,0 +1,65 @@
+/* contacto.css */
+
+/* Estilos para el contenedor principal */
+.contacto-container {
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 15px; /* Reducir el espacio entre los botones */
+    position: fixed; /* Fijar en la pantalla */
+    top: 90px; /* Distancia desde la parte inferior */
+    right: 10px; /* Distancia desde la parte derecha */
+    z-index: 1000; /* Asegura que se muestre sobre otros elementos */
+}
+
+/* Estilos para el botón de contacto */
+.contacto-button,
+.contacto-button2 {
+    display: flex;
+    align-items: center; /* Alinea el SVG y el texto verticalmente */
+    padding: 0.5rem 1rem; /* Usar unidades relativas para el padding */
+    font-size: 1rem; /* Usar unidades relativas para el tamaño de la fuente */
+    border: none;
+    border-radius: 25px; /* Bordes más pequeños */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efecto suave al cambiar de color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reducir la sombra */
+}
+
+.contacto-button {
+    background-color: #25d366; /* Usar variable CSS para el color */
+    color: white;
+}
+
+.contacto-button:hover {
+    background-color: #128c7e; /* Cambia el color al pasar el mouse */
+}
+
+.contacto-button2 {
+    background-color: #007bff; /* Usar variable CSS para el color */
+    color: white;
+}
+
+.contacto-button2:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
+
+/* Estilo para el icono SVG */
+.whatsapp-icon {
+    width: 18px; /* Reducir el tamaño del icono */
+    height: 18px; /* Reducir el tamaño del icono */
+    margin-right: 8px; /* Reducir el margen */
+    fill: currentColor; /* Asegura que el color del SVG siga el color de texto del botón */
+    stroke: none; /* Elimina el borde si lo hay */
+}
+
+/* Media queries combinadas */
+@media (max-width: 768px) {
+    .contacto-container,
+    .contacto-button,
+    .contacto-button2,
+    .whatsapp-icon {
+        /* Aquí puedes agregar los estilos que quieras para pantallas más pequeñas */
+        gap: 10px; /* Reducir el espacio entre los botones */
+    }
+}
